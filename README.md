@@ -1,3 +1,12 @@
+# Running SpotBugs 
+
+In order to generate a bug pattern report, run ```mvn compile site``` from the root directory. Within each of the major project folders docs-core, docs-web, etc., there will be a target/site folder containing a file titled spotbugs.html. Opening this file in your web browser shows the full bug pattern report. 
+
+Running ```mvn spotbugs:check``` will output all of the current bug patterns in the terminal. 
+
+Running ```mvn spotbugs:gui``` will open a GUI for each major project folder showing all of the bug patterns. This GUI allows for grouping the bug patterns by different categories. 
+
+
 <h3 align="center">
   <img src="https://teedy.io/img/github-title.png" alt="Teedy" width=500 />
 </h3>
