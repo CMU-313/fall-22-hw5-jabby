@@ -1,119 +1,105 @@
 package com.sismics.docs.core.model.jpa;
 
+import com.google.common.base.MoreObjects;
 import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.google.common.base.MoreObjects;
-
 /**
  * Comment entity.
- * 
+ *
  * @author bgamard
  */
 @Entity
 @Table(name = "T_COMMENT")
 public class Comment implements Loggable {
-    /**
-     * Comment ID.
-     */
-    @Id
-    @Column(name = "COM_ID_C", length = 36)
-    private String id;
-    
-    /**
-     * Document ID.
-     */
-    @Column(name = "COM_IDDOC_C", length = 36, nullable = false)
-    private String documentId;
-    
-    /**
-     * User ID.
-     */
-    @Column(name = "COM_IDUSER_C", length = 36, nullable = false)
-    private String userId;
-    
-    /**
-     * Content.
-     */
-    @Column(name = "COM_CONTENT_C", nullable = false)
-    private String content;
-    
-    /**
-     * Creation date.
-     */
-    @Column(name = "COM_CREATEDATE_D", nullable = false)
-    private Date createDate;
+  /** Comment ID. */
+  @Id
+  @Column(name = "COM_ID_C", length = 36)
+  private String id;
 
-    /**
-     * Deletion date.
-     */
-    @Column(name = "COM_DELETEDATE_D")
-    private Date deleteDate;
-    
-    public String getId() {
-        return id;
-    }
+  /** Document ID. */
+  @Column(name = "COM_IDDOC_C", length = 36, nullable = false)
+  private String documentId;
 
-    public void setId(String id) {
-        this.id = id;
-    }
-    
-    public String getDocumentId() {
-        return documentId;
-    }
+  /** User ID. */
+  @Column(name = "COM_IDUSER_C", length = 36, nullable = false)
+  private String userId;
 
-    public void setDocumentId(String documentId) {
-        this.documentId = documentId;
-    }
-    
-    public Date getCreateDate() {
-        return createDate;
-    }
+  /** Content. */
+  @Column(name = "COM_CONTENT_C", nullable = false)
+  private String content;
 
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
+  /** Creation date. */
+  @Column(name = "COM_CREATEDATE_D", nullable = false)
+  private Date createDate;
 
-    @Override
-    public Date getDeleteDate() {
-        return deleteDate;
-    }
+  /** Deletion date. */
+  @Column(name = "COM_DELETEDATE_D")
+  private Date deleteDate;
 
-    public void setDeleteDate(Date deleteDate) {
-        this.deleteDate = deleteDate;
-    }
-    
-    public String getContent() {
-        return content;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public String getUserId() {
-        return userId;
-    }
+  public String getDocumentId() {
+    return documentId;
+  }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
+  }
 
-    @Override
-    public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .add("id", id)
-                .add("documentId", documentId)
-                .add("userId", userId)
-                .toString();
-    }
+  public Date getCreateDate() {
+    return createDate;
+  }
 
-    @Override
-    public String toMessage() {
-        return documentId;
-    }
+  public void setCreateDate(Date createDate) {
+    this.createDate = createDate;
+  }
+
+  @Override
+  public Date getDeleteDate() {
+    return deleteDate;
+  }
+
+  public void setDeleteDate(Date deleteDate) {
+    this.deleteDate = deleteDate;
+  }
+
+  public String getContent() {
+    return content;
+  }
+
+  public void setContent(String content) {
+    this.content = content;
+  }
+
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
+  }
+
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("id", id)
+        .add("documentId", documentId)
+        .add("userId", userId)
+        .toString();
+  }
+
+  @Override
+  public String toMessage() {
+    return documentId;
+  }
 }

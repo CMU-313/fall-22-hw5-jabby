@@ -3,71 +3,61 @@ package com.sismics.docs.core.dao.dto;
 /**
  * Comment DTO.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class CommentDto {
-    /**
-     * Comment ID.
-     */
-    private String id;
-    
-    /**
-     * Creator name.
-     */
-    private String creatorName;
-    
-    /**
-     * Creator email.
-     */
-    private String creatorEmail;
-    
-    /**
-     * Content.
-     */
-    private String content;
-    
-    /**
-     * Creation date of this comment.
-     */
-    private Long createTimestamp;
+  /** Comment ID. */
+  private String id;
 
-    public String getId() {
-        return id;
-    }
+  /** Creator name. */
+  private String creatorName;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  /** Creator email. */
+  private String creatorEmail;
 
-    public String getCreatorName() {
-        return creatorName;
-    }
+  /** Content. */
+  private String content;
 
-    public void setCreatorName(String creatorName) {
-        this.creatorName = creatorName;
-    }
-    
-    public String getCreatorEmail() {
-        return creatorEmail;
-    }
+  /** Creation date of this comment. */
+  private Long createTimestamp;
 
-    public void setCreatorEmail(String creatorEmail) {
-        this.creatorEmail = creatorEmail;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public String getContent() {
-        return content;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+  public String getCreatorName() {
+    return creatorName;
+  }
 
-    public Long getCreateTimestamp() {
-        return createTimestamp;
-    }
+  public void setCreatorName(String creatorName) {
+    this.creatorName = creatorName;
+  }
 
-    public void setCreateTimestamp(Long createTimestamp) {
-        this.createTimestamp = createTimestamp;
-    }
+  public String getCreatorEmail() {
+    return creatorEmail;
+  }
+
+  public void setCreatorEmail(String creatorEmail) {
+    this.creatorEmail = creatorEmail;
+  }
+
+  public String getContent() {
+    return content;
+  }
+
+  public void setContent(String content) {
+    this.content = content;
+  }
+
+  public Long getCreateTimestamp() {
+    return createTimestamp;
+  }
+
+  public void setCreateTimestamp(Long createTimestamp) {
+    this.createTimestamp = createTimestamp;
+  }
 }

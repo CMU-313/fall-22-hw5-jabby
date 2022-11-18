@@ -8,9 +8,8 @@ import com.google.common.base.MoreObjects;
  * @author bgamard
  */
 public class RebuildIndexAsyncEvent {
-    @Override
-    public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .toString();
-    }
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this).toString();
+  }
 }

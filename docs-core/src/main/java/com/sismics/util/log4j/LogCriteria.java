@@ -6,49 +6,43 @@ import org.apache.log4j.Level;
 /**
  * Log search criteria.
  *
- * @author jtremeaux 
+ * @author jtremeaux
  */
 public class LogCriteria {
 
-    /**
-     * Minimum logging level (DEBUG, WARN)...
-     */
-    private Level minLevel;
-    
-    /**
-     * Logger name / tag.
-     */
-    private String tag;
-    
-    /**
-     * Message logged.
-     */
-    private String message;
+  /** Minimum logging level (DEBUG, WARN)... */
+  private Level minLevel;
 
-    public Level getMinLevel() {
-        return minLevel;
-    }
+  /** Logger name / tag. */
+  private String tag;
 
-    public LogCriteria setMinLevel(Level level) {
-        this.minLevel = level;
-        return this;
-    }
+  /** Message logged. */
+  private String message;
 
-    public String getTag() {
-        return tag;
-    }
+  public Level getMinLevel() {
+    return minLevel;
+  }
 
-    public LogCriteria setTag(String tag) {
-        this.tag = StringUtils.lowerCase(tag);
-        return this;
-    }
+  public LogCriteria setMinLevel(Level level) {
+    this.minLevel = level;
+    return this;
+  }
 
-    public String getMessage() {
-        return message;
-    }
+  public String getTag() {
+    return tag;
+  }
 
-    public LogCriteria setMessage(String message) {
-        this.message = StringUtils.lowerCase(message);
-        return this;
-    }
+  public LogCriteria setTag(String tag) {
+    this.tag = StringUtils.lowerCase(tag);
+    return this;
+  }
+
+  public String getMessage() {
+    return message;
+  }
+
+  public LogCriteria setMessage(String message) {
+    this.message = StringUtils.lowerCase(message);
+    return this;
+  }
 }

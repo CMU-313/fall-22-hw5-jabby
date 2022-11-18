@@ -1,6 +1,5 @@
 package com.sismics.docs.core.dao.criteria;
 
-
 import java.util.List;
 
 /**
@@ -9,17 +8,15 @@ import java.util.List;
  * @author bgamard
  */
 public class RouteModelCriteria {
-    /**
-     * ACL target ID list.
-     */
-    private List<String> targetIdList;
+  /** ACL target ID list. */
+  private List<String> targetIdList;
 
-    public List<String> getTargetIdList() {
-        return targetIdList;
-    }
+  public List<String> getTargetIdList() {
+    return targetIdList;
+  }
 
-    public RouteModelCriteria setTargetIdList(List<String> targetIdList) {
-        this.targetIdList = targetIdList;
-        return this;
-    }
+  public RouteModelCriteria setTargetIdList(List<String> targetIdList) {
+    this.targetIdList = targetIdList;
+    return this;
+  }
 }

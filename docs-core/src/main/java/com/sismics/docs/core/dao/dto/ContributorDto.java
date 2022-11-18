@@ -2,33 +2,29 @@ package com.sismics.docs.core.dao.dto;
 
 /**
  * Contributor DTO.
- * 
+ *
  * @author bgamard
  */
 public class ContributorDto {
-    /**
-     * Username.
-     */
-    private String username;
-    
-    /**
-     * Email.
-     */
-    private String email;
+  /** Username. */
+  private String username;
 
-    public String getUsername() {
-        return username;
-    }
+  /** Email. */
+  private String email;
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+  public String getUsername() {
+    return username;
+  }
 
-    public String getEmail() {
-        return email;
-    }
+  public void setUsername(String username) {
+    this.username = username;
+  }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
 }

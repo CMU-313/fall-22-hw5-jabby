@@ -21,6 +21,8 @@ jobs:
           cache: maven
       - name: Install test dependencies
         run: sudo apt-get -y -q --no-install-recommends install ffmpeg mediainfo tesseract-ocr tesseract-ocr-deu
+      - name: Reformat Style 
+        run: mvn clean -DskipTests install
       - name: Build with Maven
         run: mvn -B clean test
 

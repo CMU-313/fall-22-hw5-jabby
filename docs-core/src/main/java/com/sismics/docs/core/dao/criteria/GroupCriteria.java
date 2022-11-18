@@ -3,48 +3,42 @@ package com.sismics.docs.core.dao.criteria;
 /**
  * Group criteria.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class GroupCriteria {
-    /**
-     * Search query.
-     */
-    private String search;
+  /** Search query. */
+  private String search;
 
-    /**
-     * User ID.
-     */
-    private String userId;
-    
-    /**
-     * Retrieve user groups recursively.
-     */
-    private boolean recursive = false;
-    
-    public String getSearch() {
-        return search;
-    }
+  /** User ID. */
+  private String userId;
 
-    public GroupCriteria setSearch(String search) {
-        this.search = search;
-        return this;
-    }
+  /** Retrieve user groups recursively. */
+  private boolean recursive = false;
 
-    public String getUserId() {
-        return userId;
-    }
+  public String getSearch() {
+    return search;
+  }
 
-    public GroupCriteria setUserId(String userId) {
-        this.userId = userId;
-        return this;
-    }
+  public GroupCriteria setSearch(String search) {
+    this.search = search;
+    return this;
+  }
 
-    public boolean isRecursive() {
-        return recursive;
-    }
+  public String getUserId() {
+    return userId;
+  }
 
-    public GroupCriteria setRecursive(boolean recursive) {
-        this.recursive = recursive;
-        return this;
-    }
+  public GroupCriteria setUserId(String userId) {
+    this.userId = userId;
+    return this;
+  }
+
+  public boolean isRecursive() {
+    return recursive;
+  }
+
+  public GroupCriteria setRecursive(boolean recursive) {
+    this.recursive = recursive;
+    return this;
+  }
 }

@@ -5,90 +5,78 @@ import com.sismics.docs.core.constant.MetadataType;
 /**
  * Document metadata DTO.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class DocumentMetadataDto {
-    /**
-     * Document metadata ID.
-     */
-    private String id;
+  /** Document metadata ID. */
+  private String id;
 
-    /**
-     * Document ID.
-     */
-    private String documentId;
+  /** Document ID. */
+  private String documentId;
 
-    /**
-     * Metadata ID.
-     */
-    private String metadataId;
-    
-    /**
-     * Name.
-     */
-    private String name;
+  /** Metadata ID. */
+  private String metadataId;
 
-    /**
-     * Value.
-     */
-    private String value;
+  /** Name. */
+  private String name;
 
-    /**
-     * Type.
-     */
-    private MetadataType type;
+  /** Value. */
+  private String value;
 
-    public String getId() {
-        return id;
-    }
+  /** Type. */
+  private MetadataType type;
 
-    public DocumentMetadataDto setId(String id) {
-        this.id = id;
-        return this;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public DocumentMetadataDto setId(String id) {
+    this.id = id;
+    return this;
+  }
 
-    public DocumentMetadataDto setName(String name) {
-        this.name = name;
-        return this;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public MetadataType getType() {
-        return type;
-    }
+  public DocumentMetadataDto setName(String name) {
+    this.name = name;
+    return this;
+  }
 
-    public DocumentMetadataDto setType(MetadataType type) {
-        this.type = type;
-        return this;
-    }
+  public MetadataType getType() {
+    return type;
+  }
 
-    public String getDocumentId() {
-        return documentId;
-    }
+  public DocumentMetadataDto setType(MetadataType type) {
+    this.type = type;
+    return this;
+  }
 
-    public DocumentMetadataDto setDocumentId(String documentId) {
-        this.documentId = documentId;
-        return this;
-    }
+  public String getDocumentId() {
+    return documentId;
+  }
 
-    public String getMetadataId() {
-        return metadataId;
-    }
+  public DocumentMetadataDto setDocumentId(String documentId) {
+    this.documentId = documentId;
+    return this;
+  }
 
-    public DocumentMetadataDto setMetadataId(String metadataId) {
-        this.metadataId = metadataId;
-        return this;
-    }
+  public String getMetadataId() {
+    return metadataId;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public DocumentMetadataDto setMetadataId(String metadataId) {
+    this.metadataId = metadataId;
+    return this;
+  }
 
-    public DocumentMetadataDto setValue(String value) {
-        this.value = value;
-        return this;
-    }
+  public String getValue() {
+    return value;
+  }
+
+  public DocumentMetadataDto setValue(String value) {
+    this.value = value;
+    return this;
+  }
 }

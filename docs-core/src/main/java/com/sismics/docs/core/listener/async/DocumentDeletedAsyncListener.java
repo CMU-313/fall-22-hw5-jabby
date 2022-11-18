@@ -10,30 +10,29 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Listener on document deleted.
- * 
+ *
  * @author bgamard
  */
 public class DocumentDeletedAsyncListener {
-    /**
-     * Logger.
-     */
-    private static final Logger log = LoggerFactory.getLogger(DocumentDeletedAsyncListener.class);
+  /** Logger. */
+  private static final Logger log = LoggerFactory.getLogger(DocumentDeletedAsyncListener.class);
 
-    /**
-     * Document deleted.
-     * 
-     * @param event Document deleted event
-     */
-    @Subscribe
-    @AllowConcurrentEvents
-    public void on(final DocumentDeletedAsyncEvent event) {
-        if (log.isInfoEnabled()) {
-            log.info("Document deleted event: " + event.toString());
-        }
-
-        TransactionUtil.handle(() -> {
-            // Update index
-            AppContext.getInstance().getIndexingHandler().deleteDocument(event.getDocumentId());
-        });
+  /**
+   * Document deleted.
+   *
+   * @param event Document deleted event
+   */
+  @Subscribe
+  @AllowConcurrentEvents
+  public void on(final DocumentDeletedAsyncEvent event) {
+    if (log.isInfoEnabled()) {
+      log.info("Document deleted event: " + event.toString());
     }
+
+    TransactionUtil.handle(
+        () -> {
+          // Update index
+          AppContext.getInstance().getIndexingHandler().deleteDocument(event.getDocumentId());
+        });
+  }
 }

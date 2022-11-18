@@ -8,23 +8,19 @@ import com.google.common.base.MoreObjects;
  * @author bgamard
  */
 public class DocumentDeletedAsyncEvent extends UserEvent {
-    /**
-     * Document ID.
-     */
-    private String documentId;
-    
-    public String getDocumentId() {
-        return documentId;
-    }
+  /** Document ID. */
+  private String documentId;
 
-    public void setDocumentId(String documentId) {
-        this.documentId = documentId;
-    }
+  public String getDocumentId() {
+    return documentId;
+  }
 
-    @Override
-    public String toString() {
-        return MoreObjects.toStringHelper(this)
-            .add("documentId", documentId)
-            .toString();
-    }
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
+  }
+
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this).add("documentId", documentId).toString();
+  }
 }

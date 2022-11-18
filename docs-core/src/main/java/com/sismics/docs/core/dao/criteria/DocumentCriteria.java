@@ -4,199 +4,166 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-
 /**
  * Document criteria.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class DocumentCriteria {
-    /**
-     * ACL target ID list.
-     */
-    private List<String> targetIdList;
-    
-    /**
-     * Search query.
-     */
-    private String search;
-    
-    /**
-     * Full content search query.
-     */
-    private String fullSearch;
-    
-    /**
-     * Minimum creation date.
-     */
-    private Date createDateMin;
-    
-    /**
-     * Maximum creation date.
-     */
-    private Date createDateMax;
-    
-    /**
-     * Minimum update date.
-     */
-    private Date updateDateMin;
+  /** ACL target ID list. */
+  private List<String> targetIdList;
 
-    /**
-     * Maximum update date.
-     */
-    private Date updateDateMax;
+  /** Search query. */
+  private String search;
 
-    /**
-     * Tag IDs.
-     * The first level list will be AND'ed and the second level list will be OR'ed.
-     */
-    private List<List<String>> tagIdList = new ArrayList<>();
-    
-    /**
-     * Tag IDs to exclude.
-     * The first and second level list will be excluded.
-     */
-    private List<List<String>> excludedTagIdList = new ArrayList<>();
+  /** Full content search query. */
+  private String fullSearch;
 
-    /**
-     * Shared status.
-     */
-    private Boolean shared;
-    
-    /**
-     * Language.
-     */
-    private String language;
-    
-    /**
-     * Creator ID.
-     */
-    private String creatorId;
+  /** Minimum creation date. */
+  private Date createDateMin;
 
-    /**
-     * A route is active.
-     */
-    private Boolean activeRoute;
+  /** Maximum creation date. */
+  private Date createDateMax;
 
-    /**
-     * MIME type of a file.
-     */
-    private String mimeType;
+  /** Minimum update date. */
+  private Date updateDateMin;
 
-    /**
-     * The title.
-     */
-    private String title;
+  /** Maximum update date. */
+  private Date updateDateMax;
 
-    public List<String> getTargetIdList() {
-        return targetIdList;
-    }
+  /** Tag IDs. The first level list will be AND'ed and the second level list will be OR'ed. */
+  private List<List<String>> tagIdList = new ArrayList<>();
 
-    public void setTargetIdList(List<String> targetIdList) {
-        this.targetIdList = targetIdList;
-    }
+  /** Tag IDs to exclude. The first and second level list will be excluded. */
+  private List<List<String>> excludedTagIdList = new ArrayList<>();
 
-    public String getSearch() {
-        return search;
-    }
+  /** Shared status. */
+  private Boolean shared;
 
-    public void setSearch(String search) {
-        this.search = search;
-    }
+  /** Language. */
+  private String language;
 
-    public String getFullSearch() {
-        return fullSearch;
-    }
+  /** Creator ID. */
+  private String creatorId;
 
-    public void setFullSearch(String fullSearch) {
-        this.fullSearch = fullSearch;
-    }
+  /** A route is active. */
+  private Boolean activeRoute;
 
-    public Date getCreateDateMin() {
-        return createDateMin;
-    }
+  /** MIME type of a file. */
+  private String mimeType;
 
-    public void setCreateDateMin(Date createDateMin) {
-        this.createDateMin = createDateMin;
-    }
+  /** The title. */
+  private String title;
 
-    public Date getCreateDateMax() {
-        return createDateMax;
-    }
+  public List<String> getTargetIdList() {
+    return targetIdList;
+  }
 
-    public void setCreateDateMax(Date createDateMax) {
-        this.createDateMax = createDateMax;
-    }
+  public void setTargetIdList(List<String> targetIdList) {
+    this.targetIdList = targetIdList;
+  }
 
-    public List<List<String>> getTagIdList() {
-        return tagIdList;
-    }
+  public String getSearch() {
+    return search;
+  }
 
-    public List<List<String>> getExcludedTagIdList() {
-        return excludedTagIdList;
-    }
+  public void setSearch(String search) {
+    this.search = search;
+  }
 
-    public Boolean getShared() {
-        return shared;
-    }
+  public String getFullSearch() {
+    return fullSearch;
+  }
 
-    public void setShared(Boolean shared) {
-        this.shared = shared;
-    }
+  public void setFullSearch(String fullSearch) {
+    this.fullSearch = fullSearch;
+  }
 
-    public String getLanguage() {
-        return language;
-    }
+  public Date getCreateDateMin() {
+    return createDateMin;
+  }
 
-    public void setLanguage(String language) {
-        this.language = language;
-    }
+  public void setCreateDateMin(Date createDateMin) {
+    this.createDateMin = createDateMin;
+  }
 
-    public String getCreatorId() {
-        return creatorId;
-    }
+  public Date getCreateDateMax() {
+    return createDateMax;
+  }
 
-    public void setCreatorId(String creatorId) {
-        this.creatorId = creatorId;
-    }
- 
-    public Date getUpdateDateMin() {
-        return updateDateMin;
-    }
+  public void setCreateDateMax(Date createDateMax) {
+    this.createDateMax = createDateMax;
+  }
 
-    public void setUpdateDateMin(Date updateDateMin) {
-        this.updateDateMin = updateDateMin;
-    }
+  public List<List<String>> getTagIdList() {
+    return tagIdList;
+  }
 
-    public Date getUpdateDateMax() {
-        return updateDateMax;
-    }
+  public List<List<String>> getExcludedTagIdList() {
+    return excludedTagIdList;
+  }
 
-    public void setUpdateDateMax(Date updateDateMax) {
-        this.updateDateMax = updateDateMax;
-    }
+  public Boolean getShared() {
+    return shared;
+  }
 
-    public Boolean getActiveRoute() {
-        return activeRoute;
-    }
+  public void setShared(Boolean shared) {
+    this.shared = shared;
+  }
 
-    public void setActiveRoute(Boolean activeRoute) {
-        this.activeRoute = activeRoute;
-    }
+  public String getLanguage() {
+    return language;
+  }
 
-    public String getMimeType() {
-        return mimeType;
-    }
+  public void setLanguage(String language) {
+    this.language = language;
+  }
 
-    public void setMimeType(String mimeType) {
-        this.mimeType = mimeType;
-    }
+  public String getCreatorId() {
+    return creatorId;
+  }
 
-    public String getTitle() {
-        return title;
-    }
+  public void setCreatorId(String creatorId) {
+    this.creatorId = creatorId;
+  }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+  public Date getUpdateDateMin() {
+    return updateDateMin;
+  }
+
+  public void setUpdateDateMin(Date updateDateMin) {
+    this.updateDateMin = updateDateMin;
+  }
+
+  public Date getUpdateDateMax() {
+    return updateDateMax;
+  }
+
+  public void setUpdateDateMax(Date updateDateMax) {
+    this.updateDateMax = updateDateMax;
+  }
+
+  public Boolean getActiveRoute() {
+    return activeRoute;
+  }
+
+  public void setActiveRoute(Boolean activeRoute) {
+    this.activeRoute = activeRoute;
+  }
+
+  public String getMimeType() {
+    return mimeType;
+  }
+
+  public void setMimeType(String mimeType) {
+    this.mimeType = mimeType;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
+  }
 }

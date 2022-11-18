@@ -10,28 +10,29 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Listener on ACL created.
- * 
+ *
  * @author bgamard
  */
 public class AclCreatedAsyncListener {
-    /**
-     * Logger.
-     */
-    private static final Logger log = LoggerFactory.getLogger(AclCreatedAsyncListener.class);
+  /** Logger. */
+  private static final Logger log = LoggerFactory.getLogger(AclCreatedAsyncListener.class);
 
-    /**
-     * ACL created.
-     * 
-     * @param event ACL created event
-     */
-    @Subscribe
-    @AllowConcurrentEvents
-    public void on(final AclCreatedAsyncEvent event) {
-        if (log.isInfoEnabled()) {
-            log.info("ACL created event: " + event.toString());
-        }
-
-        TransactionUtil.handle(() -> AppContext.getInstance().getIndexingHandler()
-                .createAcl(event.getSourceId(), event.getPerm(), event.getTargetId()));
+  /**
+   * ACL created.
+   *
+   * @param event ACL created event
+   */
+  @Subscribe
+  @AllowConcurrentEvents
+  public void on(final AclCreatedAsyncEvent event) {
+    if (log.isInfoEnabled()) {
+      log.info("ACL created event: " + event.toString());
     }
+
+    TransactionUtil.handle(
+        () ->
+            AppContext.getInstance()
+                .getIndexingHandler()
+                .createAcl(event.getSourceId(), event.getPerm(), event.getTargetId()));
+  }
 }

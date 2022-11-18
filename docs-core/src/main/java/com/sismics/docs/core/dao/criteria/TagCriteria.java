@@ -5,48 +5,42 @@ import java.util.List;
 /**
  * Tag criteria.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class TagCriteria {
-    /**
-     * Tag ID.
-     */
-    private String id;
+  /** Tag ID. */
+  private String id;
 
-    /**
-     * ACL target ID list.
-     */
-    private List<String> targetIdList;
+  /** ACL target ID list. */
+  private List<String> targetIdList;
 
-    /**
-     * Document ID.
-     */
-    private String documentId;
+  /** Document ID. */
+  private String documentId;
 
-    public String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public TagCriteria setId(String id) {
-        this.id = id;
-        return this;
-    }
+  public TagCriteria setId(String id) {
+    this.id = id;
+    return this;
+  }
 
-    public List<String> getTargetIdList() {
-        return targetIdList;
-    }
+  public List<String> getTargetIdList() {
+    return targetIdList;
+  }
 
-    public TagCriteria setTargetIdList(List<String> targetIdList) {
-        this.targetIdList = targetIdList;
-        return this;
-    }
+  public TagCriteria setTargetIdList(List<String> targetIdList) {
+    this.targetIdList = targetIdList;
+    return this;
+  }
 
-    public String getDocumentId() {
-        return documentId;
-    }
+  public String getDocumentId() {
+    return documentId;
+  }
 
-    public TagCriteria setDocumentId(String documentId) {
-        this.documentId = documentId;
-        return this;
-    }
+  public TagCriteria setDocumentId(String documentId) {
+    this.documentId = documentId;
+    return this;
+  }
 }

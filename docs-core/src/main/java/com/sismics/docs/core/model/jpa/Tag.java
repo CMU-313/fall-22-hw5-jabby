@@ -1,133 +1,117 @@
 package com.sismics.docs.core.model.jpa;
 
+import com.google.common.base.MoreObjects;
 import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.google.common.base.MoreObjects;
-
 /**
  * Tag.
- * 
+ *
  * @author bgamard
  */
 @Entity
 @Table(name = "T_TAG")
 public class Tag implements Loggable {
-    /**
-     * Tag ID.
-     */
-    @Id
-    @Column(name = "TAG_ID_C", length = 36)
-    private String id;
-    
-    /**
-     * Tag name.
-     */
-    @Column(name = "TAG_NAME_C", nullable = false, length = 36)
-    private String name;
-    
-    /**
-     * User ID.
-     */
-    @Column(name = "TAG_IDUSER_C", nullable = false, length = 36)
-    private String userId;
-    
-    /**
-     * User ID.
-     */
-    @Column(name = "TAG_IDPARENT_C", length = 36)
-    private String parentId;
-    
-    /**
-     * Creation date.
-     */
-    @Column(name = "TAG_CREATEDATE_D", nullable = false)
-    private Date createDate;
-    
-    /**
-     * Deletion date.
-     */
-    @Column(name = "TAG_DELETEDATE_D")
-    private Date deleteDate;
-    
-    /**
-     * Tag name.
-     */
-    @Column(name = "TAG_COLOR_C", nullable = false, length = 7)
-    private String color;
+  /** Tag ID. */
+  @Id
+  @Column(name = "TAG_ID_C", length = 36)
+  private String id;
 
-    public String getId() {
-        return id;
-    }
+  /** Tag name. */
+  @Column(name = "TAG_NAME_C", nullable = false, length = 36)
+  private String name;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  /** User ID. */
+  @Column(name = "TAG_IDUSER_C", nullable = false, length = 36)
+  private String userId;
 
-    public String getUserId() {
-        return userId;
-    }
+  /** User ID. */
+  @Column(name = "TAG_IDPARENT_C", length = 36)
+  private String parentId;
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+  /** Creation date. */
+  @Column(name = "TAG_CREATEDATE_D", nullable = false)
+  private Date createDate;
 
-    public String getName() {
-        return name;
-    }
+  /** Deletion date. */
+  @Column(name = "TAG_DELETEDATE_D")
+  private Date deleteDate;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  /** Tag name. */
+  @Column(name = "TAG_COLOR_C", nullable = false, length = 7)
+  private String color;
 
-    public Date getCreateDate() {
-        return createDate;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
-    
-    public String getColor() {
-        return color;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+  public String getUserId() {
+    return userId;
+  }
 
-    @Override
-    public Date getDeleteDate() {
-        return deleteDate;
-    }
+  public void setUserId(String userId) {
+    this.userId = userId;
+  }
 
-    public void setDeleteDate(Date deleteDate) {
-        this.deleteDate = deleteDate;
-    }
-    
-    public String getParentId() {
-        return parentId;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setParentId(String parentId) {
-        this.parentId = parentId;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    @Override
-    public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .add("id", id)
-                .add("name", name)
-                .add("parentId", parentId)
-                .toString();
-    }
+  public Date getCreateDate() {
+    return createDate;
+  }
 
-    @Override
-    public String toMessage() {
-        return name;
-    }
+  public void setCreateDate(Date createDate) {
+    this.createDate = createDate;
+  }
+
+  public String getColor() {
+    return color;
+  }
+
+  public void setColor(String color) {
+    this.color = color;
+  }
+
+  @Override
+  public Date getDeleteDate() {
+    return deleteDate;
+  }
+
+  public void setDeleteDate(Date deleteDate) {
+    this.deleteDate = deleteDate;
+  }
+
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("id", id)
+        .add("name", name)
+        .add("parentId", parentId)
+        .toString();
+  }
+
+  @Override
+  public String toMessage() {
+    return name;
+  }
 }

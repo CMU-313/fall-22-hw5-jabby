@@ -1,18 +1,14 @@
 package com.sismics.docs.core.constant;
 
 /**
- * Permissions. 
+ * Permissions.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public enum PermType {
-    /**
-     * Read document.
-     */
-    READ,
-    
-    /**
-     * Write document.
-     */
-    WRITE
+  /** Read document. */
+  READ,
+
+  /** Write document. */
+  WRITE
 }

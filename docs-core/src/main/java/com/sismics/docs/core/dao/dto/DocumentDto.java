@@ -3,282 +3,240 @@ package com.sismics.docs.core.dao.dto;
 /**
  * Document DTO.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class DocumentDto {
-    /**
-     * Document ID.
-     */
-    private String id;
+  /** Document ID. */
+  private String id;
 
-    /**
-     * Main file ID.
-     */
-    private String fileId;
+  /** Main file ID. */
+  private String fileId;
 
-    /**
-     * Title.
-     */
-    private String title;
-    
-    /**
-     * Description.
-     */
-    private String description;
-    
-    /**
-     * Subject.
-     */
-    private String subject;
-    
-    /**
-     * Identifier.
-     */
-    private String identifier;
-    
-    /**
-     * Publisher.
-     */
-    private String publisher;
-    
-    /**
-     * Format.
-     */
-    private String format;
-    
-    /**
-     * Source.
-     */
-    private String source;
-    
-    /**
-     * Type.
-     */
-    private String type;
-    
-    /**
-     * Coverage.
-     */
-    private String coverage;
-    
-    /**
-     * Rights.
-     */
-    private String rights;
-    
-    /**
-     * Language.
-     */
-    private String language;
-    
-    /**
-     * Creation date.
-     */
-    private Long createTimestamp;
-    
-    /**
-     * Update date.
-     */
-    private Long updateTimestamp;
+  /** Title. */
+  private String title;
 
-    /**
-     * Shared status.
-     */
-    private Boolean shared;
+  /** Description. */
+  private String description;
 
-    /**
-     * File count.
-     */
-    private Integer fileCount;
-    
-    /**
-     * Document creator.
-     */
-    private String creator;
+  /** Subject. */
+  private String subject;
 
-    /**
-     * A route is active.
-     */
-    private boolean activeRoute;
+  /** Identifier. */
+  private String identifier;
 
-    /**
-     * Current route step name.
-     */
-    private String currentStepName;
+  /** Publisher. */
+  private String publisher;
 
-    /**
-     * Search highlight.
-     */
-    private String highlight;
+  /** Format. */
+  private String format;
 
-    public String getId() {
-        return id;
-    }
+  /** Source. */
+  private String source;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  /** Type. */
+  private String type;
 
-    public String getFileId() {
-        return fileId;
-    }
+  /** Coverage. */
+  private String coverage;
 
-    public DocumentDto setFileId(String fileId) {
-        this.fileId = fileId;
-        return this;
-    }
+  /** Rights. */
+  private String rights;
 
-    public String getTitle() {
-        return title;
-    }
+  /** Language. */
+  private String language;
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+  /** Creation date. */
+  private Long createTimestamp;
 
-    public String getDescription() {
-        return description;
-    }
+  /** Update date. */
+  private Long updateTimestamp;
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  /** Shared status. */
+  private Boolean shared;
 
-    public String getSubject() {
-        return subject;
-    }
+  /** File count. */
+  private Integer fileCount;
 
-    public void setSubject(String subject) {
-        this.subject = subject;
-    }
+  /** Document creator. */
+  private String creator;
 
-    public String getIdentifier() {
-        return identifier;
-    }
+  /** A route is active. */
+  private boolean activeRoute;
 
-    public void setIdentifier(String identifier) {
-        this.identifier = identifier;
-    }
-    
-    public String getPublisher() {
-        return publisher;
-    }
+  /** Current route step name. */
+  private String currentStepName;
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
-    }
+  /** Search highlight. */
+  private String highlight;
 
-    public String getFormat() {
-        return format;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setFormat(String format) {
-        this.format = format;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public String getSource() {
-        return source;
-    }
+  public String getFileId() {
+    return fileId;
+  }
 
-    public void setSource(String source) {
-        this.source = source;
-    }
+  public DocumentDto setFileId(String fileId) {
+    this.fileId = fileId;
+    return this;
+  }
 
-    public String getType() {
-        return type;
-    }
+  public String getTitle() {
+    return title;
+  }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+  public void setTitle(String title) {
+    this.title = title;
+  }
 
-    public String getCoverage() {
-        return coverage;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setCoverage(String coverage) {
-        this.coverage = coverage;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public String getRights() {
-        return rights;
-    }
+  public String getSubject() {
+    return subject;
+  }
 
-    public void setRights(String rights) {
-        this.rights = rights;
-    }
+  public void setSubject(String subject) {
+    this.subject = subject;
+  }
 
-    public Long getCreateTimestamp() {
-        return createTimestamp;
-    }
+  public String getIdentifier() {
+    return identifier;
+  }
 
-    public void setCreateTimestamp(Long createTimestamp) {
-        this.createTimestamp = createTimestamp;
-    }
+  public void setIdentifier(String identifier) {
+    this.identifier = identifier;
+  }
 
-    public Boolean getShared() {
-        return shared;
-    }
+  public String getPublisher() {
+    return publisher;
+  }
 
-    public void setShared(Boolean shared) {
-        this.shared = shared;
-    }
+  public void setPublisher(String publisher) {
+    this.publisher = publisher;
+  }
 
-    public String getLanguage() {
-        return language;
-    }
+  public String getFormat() {
+    return format;
+  }
 
-    public void setLanguage(String language) {
-        this.language = language;
-    }
+  public void setFormat(String format) {
+    this.format = format;
+  }
 
-    public Integer getFileCount() {
-        return fileCount;
-    }
+  public String getSource() {
+    return source;
+  }
 
-    public void setFileCount(Integer fileCount) {
-        this.fileCount = fileCount;
-    }
+  public void setSource(String source) {
+    this.source = source;
+  }
 
-    public String getCreator() {
-        return creator;
-    }
+  public String getType() {
+    return type;
+  }
 
-    public void setCreator(String creator) {
-        this.creator = creator;
-    }
+  public void setType(String type) {
+    this.type = type;
+  }
 
-    public boolean isActiveRoute() {
-        return activeRoute;
-    }
+  public String getCoverage() {
+    return coverage;
+  }
 
-    public void setActiveRoute(boolean activeRoute) {
-        this.activeRoute = activeRoute;
-    }
+  public void setCoverage(String coverage) {
+    this.coverage = coverage;
+  }
 
-    public String getCurrentStepName() {
-        return currentStepName;
-    }
+  public String getRights() {
+    return rights;
+  }
 
-    public Long getUpdateTimestamp() {
-        return updateTimestamp;
-    }
+  public void setRights(String rights) {
+    this.rights = rights;
+  }
 
-    public void setUpdateTimestamp(Long updateTimestamp) {
-        this.updateTimestamp = updateTimestamp;
-    }
+  public Long getCreateTimestamp() {
+    return createTimestamp;
+  }
 
-    public DocumentDto setCurrentStepName(String currentStepName) {
-        this.currentStepName = currentStepName;
-        return this;
-    }
+  public void setCreateTimestamp(Long createTimestamp) {
+    this.createTimestamp = createTimestamp;
+  }
 
-    public String getHighlight() {
-        return highlight;
-    }
+  public Boolean getShared() {
+    return shared;
+  }
 
-    public DocumentDto setHighlight(String highlight) {
-        this.highlight = highlight;
-        return this;
-    }
+  public void setShared(Boolean shared) {
+    this.shared = shared;
+  }
+
+  public String getLanguage() {
+    return language;
+  }
+
+  public void setLanguage(String language) {
+    this.language = language;
+  }
+
+  public Integer getFileCount() {
+    return fileCount;
+  }
+
+  public void setFileCount(Integer fileCount) {
+    this.fileCount = fileCount;
+  }
+
+  public String getCreator() {
+    return creator;
+  }
+
+  public void setCreator(String creator) {
+    this.creator = creator;
+  }
+
+  public boolean isActiveRoute() {
+    return activeRoute;
+  }
+
+  public void setActiveRoute(boolean activeRoute) {
+    this.activeRoute = activeRoute;
+  }
+
+  public String getCurrentStepName() {
+    return currentStepName;
+  }
+
+  public Long getUpdateTimestamp() {
+    return updateTimestamp;
+  }
+
+  public void setUpdateTimestamp(Long updateTimestamp) {
+    this.updateTimestamp = updateTimestamp;
+  }
+
+  public DocumentDto setCurrentStepName(String currentStepName) {
+    this.currentStepName = currentStepName;
+    return this;
+  }
+
+  public String getHighlight() {
+    return highlight;
+  }
+
+  public DocumentDto setHighlight(String highlight) {
+    this.highlight = highlight;
+    return this;
+  }
 }

@@ -9,29 +9,27 @@ import javax.ws.rs.core.Response;
 
 /**
  * Webhook REST resources.
- * 
+ *
  * @author bgamard
  */
 @Path("/thirdpartywebhook")
 public class ThirdPartyWebhookResource extends BaseResource {
-    /**
-     * Last payload received.
-     */
-    private static JsonObject lastPayload;
+  /** Last payload received. */
+  private static JsonObject lastPayload;
 
-    /**
-     * Add a webhook.
-     *
-     * @return Response
-     */
-    @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response webhook(JsonObject request) {
-        lastPayload = request;
-        return Response.ok().build();
-    }
+  /**
+   * Add a webhook.
+   *
+   * @return Response
+   */
+  @POST
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Response webhook(JsonObject request) {
+    lastPayload = request;
+    return Response.ok().build();
+  }
 
-    public static JsonObject getLastPayload() {
-        return lastPayload;
-    }
+  public static JsonObject getLastPayload() {
+    return lastPayload;
+  }
 }

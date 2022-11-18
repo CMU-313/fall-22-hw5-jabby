@@ -10,28 +10,29 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Listener on ACL deleted.
- * 
+ *
  * @author bgamard
  */
 public class AclDeletedAsyncListener {
-    /**
-     * Logger.
-     */
-    private static final Logger log = LoggerFactory.getLogger(AclDeletedAsyncListener.class);
+  /** Logger. */
+  private static final Logger log = LoggerFactory.getLogger(AclDeletedAsyncListener.class);
 
-    /**
-     * ACL deleted.
-     *
-     * @param event ACL deleted event
-     */
-    @Subscribe
-    @AllowConcurrentEvents
-    public void on(final AclDeletedAsyncEvent event) {
-        if (log.isInfoEnabled()) {
-            log.info("ACL deleted event: " + event.toString());
-        }
-
-        TransactionUtil.handle(() -> AppContext.getInstance().getIndexingHandler()
-                .deleteAcl(event.getSourceId(), event.getPerm(), event.getTargetId()));
+  /**
+   * ACL deleted.
+   *
+   * @param event ACL deleted event
+   */
+  @Subscribe
+  @AllowConcurrentEvents
+  public void on(final AclDeletedAsyncEvent event) {
+    if (log.isInfoEnabled()) {
+      log.info("ACL deleted event: " + event.toString());
     }
+
+    TransactionUtil.handle(
+        () ->
+            AppContext.getInstance()
+                .getIndexingHandler()
+                .deleteAcl(event.getSourceId(), event.getPerm(), event.getTargetId()));
+  }
 }

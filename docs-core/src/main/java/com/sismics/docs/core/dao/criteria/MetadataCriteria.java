@@ -3,7 +3,6 @@ package com.sismics.docs.core.dao.criteria;
 /**
  * Metadata criteria.
  *
- * @author bgamard 
+ * @author bgamard
  */
-public class MetadataCriteria {
-}
+public class MetadataCriteria {}
