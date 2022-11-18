@@ -8,12 +8,12 @@ import com.sismics.docs.core.model.jpa.User;
  * @author bgamard
  */
 public interface AuthenticationHandler {
-    /**
-     * Authenticate a user.
-     *
-     * @param username Username
-     * @param password Password
-     * @return Authenticated user
-     */
-    User authenticate(String username, String password);
+  /**
+   * Authenticate a user.
+   *
+   * @param username Username
+   * @param password Password
+   * @return Authenticated user
+   */
+  User authenticate(String username, String password);
 }

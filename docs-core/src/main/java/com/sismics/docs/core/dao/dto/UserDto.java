@@ -5,120 +5,104 @@ import com.google.common.base.MoreObjects;
 /**
  * User DTO.
  *
- * @author jtremeaux 
+ * @author jtremeaux
  */
 public class UserDto {
-    /**
-     * User ID.
-     */
-    private String id;
-    
-    /**
-     * Username.
-     */
-    private String username;
-    
-    /**
-     * Email address.
-     */
-    private String email;
-    
-    /**
-     * Creation date of this user.
-     */
-    private Long createTimestamp;
+  /** User ID. */
+  private String id;
 
-    /**
-     * Disable date of this user.
-     */
-    private Long disableTimestamp;
+  /** Username. */
+  private String username;
 
-    /**
-     * Storage quota.
-     */
-    private Long storageQuota;
-    
-    /**
-     * Storage current usage.
-     */
-    private Long storageCurrent;
+  /** Email address. */
+  private String email;
 
-    /**
-     * TOTP key.
-     */
-    private String totpKey;
+  /** Creation date of this user. */
+  private Long createTimestamp;
 
-    public String getId() {
-        return id;
-    }
+  /** Disable date of this user. */
+  private Long disableTimestamp;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  /** Storage quota. */
+  private Long storageQuota;
 
-    public String getUsername() {
-        return username;
-    }
+  /** Storage current usage. */
+  private Long storageCurrent;
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+  /** TOTP key. */
+  private String totpKey;
 
-    public String getEmail() {
-        return email;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public Long getCreateTimestamp() {
-        return createTimestamp;
-    }
-    
-    public void setCreateTimestamp(Long createTimestamp) {
-        this.createTimestamp = createTimestamp;
-    }
+  public String getUsername() {
+    return username;
+  }
 
-    public Long getDisableTimestamp() {
-        return disableTimestamp;
-    }
+  public void setUsername(String username) {
+    this.username = username;
+  }
 
-    public UserDto setDisableTimestamp(Long disableTimestamp) {
-        this.disableTimestamp = disableTimestamp;
-        return this;
-    }
+  public String getEmail() {
+    return email;
+  }
 
-    public Long getStorageQuota() {
-        return storageQuota;
-    }
+  public void setEmail(String email) {
+    this.email = email;
+  }
 
-    public void setStorageQuota(Long storageQuota) {
-        this.storageQuota = storageQuota;
-    }
+  public Long getCreateTimestamp() {
+    return createTimestamp;
+  }
 
-    public Long getStorageCurrent() {
-        return storageCurrent;
-    }
+  public void setCreateTimestamp(Long createTimestamp) {
+    this.createTimestamp = createTimestamp;
+  }
 
-    public void setStorageCurrent(Long storageCurrent) {
-        this.storageCurrent = storageCurrent;
-    }
+  public Long getDisableTimestamp() {
+    return disableTimestamp;
+  }
 
-    public String getTotpKey() {
-        return totpKey;
-    }
+  public UserDto setDisableTimestamp(Long disableTimestamp) {
+    this.disableTimestamp = disableTimestamp;
+    return this;
+  }
 
-    public void setTotpKey(String totpKey) {
-        this.totpKey = totpKey;
-    }
+  public Long getStorageQuota() {
+    return storageQuota;
+  }
 
-    @Override
-    public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .add("id", id)
-                .add("username", username)
-                .add("email", email)
-                .toString();
-    }
+  public void setStorageQuota(Long storageQuota) {
+    this.storageQuota = storageQuota;
+  }
+
+  public Long getStorageCurrent() {
+    return storageCurrent;
+  }
+
+  public void setStorageCurrent(Long storageCurrent) {
+    this.storageCurrent = storageCurrent;
+  }
+
+  public String getTotpKey() {
+    return totpKey;
+  }
+
+  public void setTotpKey(String totpKey) {
+    this.totpKey = totpKey;
+  }
+
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("id", id)
+        .add("username", username)
+        .add("email", email)
+        .toString();
+  }
 }

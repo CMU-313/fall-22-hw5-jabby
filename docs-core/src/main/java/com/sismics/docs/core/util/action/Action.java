@@ -1,7 +1,6 @@
 package com.sismics.docs.core.util.action;
 
 import com.sismics.docs.core.dao.dto.DocumentDto;
-
 import javax.json.JsonObject;
 
 /**
@@ -10,19 +9,19 @@ import javax.json.JsonObject;
  * @author bgamard
  */
 public interface Action {
-    /**
-     * Execute the action.
-     *
-     * @param documentDto Document DTO
-     * @param action Action data
-     */
-    void execute(DocumentDto documentDto, JsonObject action);
+  /**
+   * Execute the action.
+   *
+   * @param documentDto Document DTO
+   * @param action Action data
+   */
+  void execute(DocumentDto documentDto, JsonObject action);
 
-    /**
-     * Validate the action.
-     *
-     * @param action Action data
-     * @throws Exception Validation error
-     */
-    void validate(JsonObject action) throws Exception;
+  /**
+   * Validate the action.
+   *
+   * @param action Action data
+   * @throws Exception Validation error
+   */
+  void validate(JsonObject action) throws Exception;
 }

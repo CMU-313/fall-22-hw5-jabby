@@ -3,21 +3,15 @@ package com.sismics.docs.core.constant;
 /**
  * Route step transitions.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public enum RouteStepTransition {
-    /**
-     * Route step approved.
-     */
-    APPROVED,
-    
-    /**
-     * Route step rejected.
-     */
-    REJECTED,
+  /** Route step approved. */
+  APPROVED,
 
-    /**
-     * Route step validated.
-     */
-    VALIDATED
+  /** Route step rejected. */
+  REJECTED,
+
+  /** Route step validated. */
+  VALIDATED
 }

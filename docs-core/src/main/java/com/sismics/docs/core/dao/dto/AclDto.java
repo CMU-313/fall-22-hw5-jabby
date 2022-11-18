@@ -5,84 +5,72 @@ import com.sismics.docs.core.constant.PermType;
 /**
  * Acl DTO.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class AclDto {
-    /**
-     * Acl ID.
-     */
-    private String id;
-    
-    /**
-     * Target name.
-     */
-    private String targetName;
-    
-    /**
-     * Permission.
-     */
-    private PermType perm;
-    
-    /**
-     * Source ID.
-     */
-    private String sourceId;
-    
-    /**
-     * Target ID.
-     */
-    private String targetId;
-    
-    /**
-     * Target type.
-     */
-    private String targetType;
+  /** Acl ID. */
+  private String id;
 
-    public String getId() {
-        return id;
-    }
+  /** Target name. */
+  private String targetName;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  /** Permission. */
+  private PermType perm;
 
-    public String getTargetName() {
-        return targetName;
-    }
+  /** Source ID. */
+  private String sourceId;
 
-    public void setTargetName(String targetName) {
-        this.targetName = targetName;
-    }
+  /** Target ID. */
+  private String targetId;
 
-    public PermType getPerm() {
-        return perm;
-    }
+  /** Target type. */
+  private String targetType;
 
-    public void setPerm(PermType perm) {
-        this.perm = perm;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public String getSourceId() {
-        return sourceId;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public void setSourceId(String sourceId) {
-        this.sourceId = sourceId;
-    }
+  public String getTargetName() {
+    return targetName;
+  }
 
-    public String getTargetId() {
-        return targetId;
-    }
+  public void setTargetName(String targetName) {
+    this.targetName = targetName;
+  }
 
-    public void setTargetId(String targetId) {
-        this.targetId = targetId;
-    }
+  public PermType getPerm() {
+    return perm;
+  }
 
-    public String getTargetType() {
-        return targetType;
-    }
+  public void setPerm(PermType perm) {
+    this.perm = perm;
+  }
 
-    public void setTargetType(String targetType) {
-        this.targetType = targetType;
-    }
+  public String getSourceId() {
+    return sourceId;
+  }
+
+  public void setSourceId(String sourceId) {
+    this.sourceId = sourceId;
+  }
+
+  public String getTargetId() {
+    return targetId;
+  }
+
+  public void setTargetId(String targetId) {
+    this.targetId = targetId;
+  }
+
+  public String getTargetType() {
+    return targetType;
+  }
+
+  public void setTargetType(String targetType) {
+    this.targetType = targetType;
+  }
 }

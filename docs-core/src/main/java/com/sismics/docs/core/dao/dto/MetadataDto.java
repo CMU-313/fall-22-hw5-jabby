@@ -5,48 +5,42 @@ import com.sismics.docs.core.constant.MetadataType;
 /**
  * Metadata DTO.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class MetadataDto {
-    /**
-     * Metadata ID.
-     */
-    private String id;
-    
-    /**
-     * Name.
-     */
-    private String name;
+  /** Metadata ID. */
+  private String id;
 
-    /**
-     * Type.
-     */
-    private MetadataType type;
+  /** Name. */
+  private String name;
 
-    public String getId() {
-        return id;
-    }
+  /** Type. */
+  private MetadataType type;
 
-    public MetadataDto setId(String id) {
-        this.id = id;
-        return this;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public MetadataDto setId(String id) {
+    this.id = id;
+    return this;
+  }
 
-    public MetadataDto setName(String name) {
-        this.name = name;
-        return this;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public MetadataType getType() {
-        return type;
-    }
+  public MetadataDto setName(String name) {
+    this.name = name;
+    return this;
+  }
 
-    public MetadataDto setType(MetadataType type) {
-        this.type = type;
-        return this;
-    }
+  public MetadataType getType() {
+    return type;
+  }
+
+  public MetadataDto setType(MetadataType type) {
+    this.type = type;
+    return this;
+  }
 }

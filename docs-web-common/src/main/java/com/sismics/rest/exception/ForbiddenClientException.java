@@ -11,17 +11,18 @@ import javax.ws.rs.core.Response.Status;
  * @author jtremeaux
  */
 public class ForbiddenClientException extends WebApplicationException {
-    /**
-     * Serial UID.
-     */
-    private static final long serialVersionUID = 1L;
+  /** Serial UID. */
+  private static final long serialVersionUID = 1L;
 
-    /**
-     * Constructor of ForbiddenClientException.
-     */
-    public ForbiddenClientException() {
-        super(Response.status(Status.FORBIDDEN).entity(Json.createObjectBuilder()
-            .add("type", "ForbiddenError")
-            .add("message", "You don't have access to this resource").build()).build());
-    }
+  /** Constructor of ForbiddenClientException. */
+  public ForbiddenClientException() {
+    super(
+        Response.status(Status.FORBIDDEN)
+            .entity(
+                Json.createObjectBuilder()
+                    .add("type", "ForbiddenError")
+                    .add("message", "You don't have access to this resource")
+                    .build())
+            .build());
+  }
 }

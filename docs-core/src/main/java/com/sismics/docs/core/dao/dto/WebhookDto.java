@@ -2,73 +2,65 @@ package com.sismics.docs.core.dao.dto;
 
 /**
  * Webhook DTO.
- * 
+ *
  * @author bgamard
  */
 public class WebhookDto {
-    /**
-     * Webhook ID.
-     */
-    private String id;
-    
-    /**
-     * Event.
-     */
-    private String event;
+  /** Webhook ID. */
+  private String id;
 
-    /**
-     * URL.
-     */
-    private String url;
+  /** Event. */
+  private String event;
 
-    /**
-     * Creation date.
-     */
-    private Long createTimestamp;
+  /** URL. */
+  private String url;
 
-    public String getId() {
-        return id;
-    }
+  /** Creation date. */
+  private Long createTimestamp;
 
-    public WebhookDto setId(String id) {
-        this.id = id;
-        return this;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public String getEvent() {
-        return event;
-    }
+  public WebhookDto setId(String id) {
+    this.id = id;
+    return this;
+  }
 
-    public WebhookDto setEvent(String event) {
-        this.event = event;
-        return this;
-    }
+  public String getEvent() {
+    return event;
+  }
 
-    public String getUrl() {
-        return url;
-    }
+  public WebhookDto setEvent(String event) {
+    this.event = event;
+    return this;
+  }
 
-    public WebhookDto setUrl(String url) {
-        this.url = url;
-        return this;
-    }
+  public String getUrl() {
+    return url;
+  }
 
-    public Long getCreateTimestamp() {
-        return createTimestamp;
-    }
+  public WebhookDto setUrl(String url) {
+    this.url = url;
+    return this;
+  }
 
-    public WebhookDto setCreateTimestamp(Long createTimestamp) {
-        this.createTimestamp = createTimestamp;
-        return this;
-    }
+  public Long getCreateTimestamp() {
+    return createTimestamp;
+  }
 
-    @Override
-    public boolean equals(Object obj) {
-        return id.equals(((WebhookDto) obj).getId());
-    }
-    
-    @Override
-    public int hashCode() {
-        return id.hashCode();
-    }
+  public WebhookDto setCreateTimestamp(Long createTimestamp) {
+    this.createTimestamp = createTimestamp;
+    return this;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    return id.equals(((WebhookDto) obj).getId());
+  }
+
+  @Override
+  public int hashCode() {
+    return id.hashCode();
+  }
 }

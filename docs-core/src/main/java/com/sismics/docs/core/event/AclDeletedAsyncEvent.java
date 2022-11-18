@@ -5,5 +5,4 @@ package com.sismics.docs.core.event;
  *
  * @author bgamard
  */
-public class AclDeletedAsyncEvent extends AclEvent {
-}
+public class AclDeletedAsyncEvent extends AclEvent {}

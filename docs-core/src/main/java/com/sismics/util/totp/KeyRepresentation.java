@@ -31,6 +31,6 @@
 package com.sismics.util.totp;
 
 public enum KeyRepresentation {
-    BASE32,
-    BASE64
+  BASE32,
+  BASE64
 }

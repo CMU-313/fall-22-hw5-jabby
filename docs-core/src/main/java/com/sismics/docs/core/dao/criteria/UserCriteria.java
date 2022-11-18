@@ -3,62 +3,54 @@ package com.sismics.docs.core.dao.criteria;
 /**
  * User criteria.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class UserCriteria {
-    /**
-     * Search query.
-     */
-    private String search;
-    
-    /**
-     * Group ID.
-     */
-    private String groupId;
+  /** Search query. */
+  private String search;
 
-    /**
-     * User ID.
-     */
-    private String userId;
+  /** Group ID. */
+  private String groupId;
 
-    /**
-     * Username.
-     */
-    private String userName;
+  /** User ID. */
+  private String userId;
 
-    public String getSearch() {
-        return search;
-    }
+  /** Username. */
+  private String userName;
 
-    public UserCriteria setSearch(String search) {
-        this.search = search;
-        return this;
-    }
+  public String getSearch() {
+    return search;
+  }
 
-    public String getGroupId() {
-        return groupId;
-    }
+  public UserCriteria setSearch(String search) {
+    this.search = search;
+    return this;
+  }
 
-    public UserCriteria setGroupId(String groupId) {
-        this.groupId = groupId;
-        return this;
-    }
+  public String getGroupId() {
+    return groupId;
+  }
 
-    public String getUserId() {
-        return userId;
-    }
+  public UserCriteria setGroupId(String groupId) {
+    this.groupId = groupId;
+    return this;
+  }
 
-    public UserCriteria setUserId(String userId) {
-        this.userId = userId;
-        return this;
-    }
+  public String getUserId() {
+    return userId;
+  }
 
-    public String getUserName() {
-        return userName;
-    }
+  public UserCriteria setUserId(String userId) {
+    this.userId = userId;
+    return this;
+  }
 
-    public UserCriteria setUserName(String userName) {
-        this.userName = userName;
-        return this;
-    }
+  public String getUserName() {
+    return userName;
+  }
+
+  public UserCriteria setUserName(String userName) {
+    this.userName = userName;
+    return this;
+  }
 }

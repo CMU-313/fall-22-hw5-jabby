@@ -1,49 +1,42 @@
 package com.sismics.docs.core.dao.criteria;
 
-
 /**
  * Audit log criteria.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class AuditLogCriteria {
-    /**
-     * Document ID.
-     */
-    private String documentId;
+  /** Document ID. */
+  private String documentId;
 
-    /**
-     * User ID.
-     */
-    private String userId;
+  /** User ID. */
+  private String userId;
 
-    /**
-     * The search is done for an admin user.
-     */
-    private boolean isAdmin = false;
-    
-    public String getDocumentId() {
-        return documentId;
-    }
+  /** The search is done for an admin user. */
+  private boolean isAdmin = false;
 
-    public void setDocumentId(String documentId) {
-        this.documentId = documentId;
-    }
+  public String getDocumentId() {
+    return documentId;
+  }
 
-    public String getUserId() {
-        return userId;
-    }
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
+  }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+  public String getUserId() {
+    return userId;
+  }
 
-    public boolean isAdmin() {
-        return isAdmin;
-    }
+  public void setUserId(String userId) {
+    this.userId = userId;
+  }
 
-    public AuditLogCriteria setAdmin(boolean admin) {
-        isAdmin = admin;
-        return this;
-    }
+  public boolean isAdmin() {
+    return isAdmin;
+  }
+
+  public AuditLogCriteria setAdmin(boolean admin) {
+    isAdmin = admin;
+    return this;
+  }
 }

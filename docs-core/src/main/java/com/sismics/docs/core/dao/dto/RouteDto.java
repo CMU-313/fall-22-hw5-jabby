@@ -2,49 +2,43 @@ package com.sismics.docs.core.dao.dto;
 
 /**
  * Route DTO.
- * 
+ *
  * @author bgamard
  */
 public class RouteDto {
-    /**
-     * Route ID.
-     */
-    private String id;
+  /** Route ID. */
+  private String id;
 
-    /**
-     * Name.
-     */
-    private String name;
+  /** Name. */
+  private String name;
 
-    /**
-     * Creation date.
-     */
-    private Long createTimestamp;
+  /** Creation date. */
+  private Long createTimestamp;
 
-    public String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public RouteDto setId(String id) {
-        this.id = id;
-        return this;
-    }
+  public RouteDto setId(String id) {
+    this.id = id;
+    return this;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public RouteDto setName(String name) {
-        this.name = name;
-        return this;
-    }
+  public RouteDto setName(String name) {
+    this.name = name;
+    return this;
+  }
 
-    public Long getCreateTimestamp() {
-        return createTimestamp;
-    }
+  public Long getCreateTimestamp() {
+    return createTimestamp;
+  }
 
-    public RouteDto setCreateTimestamp(Long createTimestamp) {
-        this.createTimestamp = createTimestamp;
-        return this;
-    }
+  public RouteDto setCreateTimestamp(Long createTimestamp) {
+    this.createTimestamp = createTimestamp;
+    return this;
+  }
 }

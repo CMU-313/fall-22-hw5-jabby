@@ -5,97 +5,83 @@ import com.sismics.docs.core.constant.AuditLogType;
 /**
  * Audit log DTO.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public class AuditLogDto {
-    /**
-     * Audit log ID.
-     */
-    private String id;
-    
-    /**
-     * Username.
-     */
-    private String username;
-    
-    /**
-     * Entity ID.
-     */
-    private String entityId;
-    
-    /**
-     * Entity class.
-     */
-    private String entityClass;
-    
-    /**
-     * Audit log type.
-     */
-    private AuditLogType type;
-    
-    /**
-     * Audit log message.
-     */
-    private String message;
-    
-    /**
-     * Creation date.
-     */
-    private Long createTimestamp;
-    
-    public String getId() {
-        return id;
-    }
+  /** Audit log ID. */
+  private String id;
 
-    public void setId(String id) {
-        this.id = id;
-    }
-    
-    public String getUsername() {
-        return username;
-    }
+  /** Username. */
+  private String username;
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+  /** Entity ID. */
+  private String entityId;
 
-    public String getEntityId() {
-        return entityId;
-    }
+  /** Entity class. */
+  private String entityClass;
 
-    public void setEntityId(String entityId) {
-        this.entityId = entityId;
-    }
+  /** Audit log type. */
+  private AuditLogType type;
 
-    public String getEntityClass() {
-        return entityClass;
-    }
+  /** Audit log message. */
+  private String message;
 
-    public void setEntityClass(String entityClass) {
-        this.entityClass = entityClass;
-    }
+  /** Creation date. */
+  private Long createTimestamp;
 
-    public AuditLogType getType() {
-        return type;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setType(AuditLogType type) {
-        this.type = type;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public String getMessage() {
-        return message;
-    }
+  public String getUsername() {
+    return username;
+  }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+  public void setUsername(String username) {
+    this.username = username;
+  }
 
-    public Long getCreateTimestamp() {
-        return createTimestamp;
-    }
+  public String getEntityId() {
+    return entityId;
+  }
 
-    public void setCreateTimestamp(Long createTimestamp) {
-        this.createTimestamp = createTimestamp;
-    }
+  public void setEntityId(String entityId) {
+    this.entityId = entityId;
+  }
+
+  public String getEntityClass() {
+    return entityClass;
+  }
+
+  public void setEntityClass(String entityClass) {
+    this.entityClass = entityClass;
+  }
+
+  public AuditLogType getType() {
+    return type;
+  }
+
+  public void setType(AuditLogType type) {
+    this.type = type;
+  }
+
+  public String getMessage() {
+    return message;
+  }
+
+  public void setMessage(String message) {
+    this.message = message;
+  }
+
+  public Long getCreateTimestamp() {
+    return createTimestamp;
+  }
+
+  public void setCreateTimestamp(Long createTimestamp) {
+    this.createTimestamp = createTimestamp;
+  }
 }

@@ -1,23 +1,17 @@
 package com.sismics.docs.core.constant;
 
 /**
- * Audit log types. 
+ * Audit log types.
  *
- * @author bgamard 
+ * @author bgamard
  */
 public enum AuditLogType {
-    /**
-     * Create.
-     */
-    CREATE,
-    
-    /**
-     * Update.
-     */
-    UPDATE,
+  /** Create. */
+  CREATE,
 
-    /**
-     * Delete.
-     */
-    DELETE
+  /** Update. */
+  UPDATE,
+
+  /** Delete. */
+  DELETE
 }

@@ -1,7 +1,6 @@
 package com.sismics.docs.core.event;
 
 import com.google.common.base.MoreObjects;
-
 import java.nio.file.Path;
 
 /**
@@ -10,51 +9,45 @@ import java.nio.file.Path;
  * @author bgamard
  */
 public abstract class FileEvent extends UserEvent {
-    /**
-     * File ID.
-     */
-    private String fileId;
-    
-    /**
-     * Language of the file.
-     */
-    private String language;
-    
-    /**
-     * Unencrypted original file.
-     */
-    private Path unencryptedFile;
+  /** File ID. */
+  private String fileId;
 
-    public String getFileId() {
-        return fileId;
-    }
+  /** Language of the file. */
+  private String language;
 
-    public void setFileId(String fileId) {
-        this.fileId = fileId;
-    }
+  /** Unencrypted original file. */
+  private Path unencryptedFile;
 
-    public String getLanguage() {
-        return language;
-    }
+  public String getFileId() {
+    return fileId;
+  }
 
-    public void setLanguage(String language) {
-        this.language = language;
-    }
+  public void setFileId(String fileId) {
+    this.fileId = fileId;
+  }
 
-    public Path getUnencryptedFile() {
-        return unencryptedFile;
-    }
+  public String getLanguage() {
+    return language;
+  }
 
-    public FileEvent setUnencryptedFile(Path unencryptedFile) {
-        this.unencryptedFile = unencryptedFile;
-        return this;
-    }
+  public void setLanguage(String language) {
+    this.language = language;
+  }
 
-    @Override
-    public String toString() {
-        return MoreObjects.toStringHelper(this)
-            .add("fileId", fileId)
-            .add("language", language)
-            .toString();
-    }
+  public Path getUnencryptedFile() {
+    return unencryptedFile;
+  }
+
+  public FileEvent setUnencryptedFile(Path unencryptedFile) {
+    this.unencryptedFile = unencryptedFile;
+    return this;
+  }
+
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("fileId", fileId)
+        .add("language", language)
+        .toString();
+  }
 }
