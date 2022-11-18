@@ -140,6 +140,13 @@
         </executions>
       </plugin>
 
+
+      <plugin>
+          <groupId>org.pitest</groupId>
+          <artifactId>pitest-maven</artifactId>
+          <version>1.9.11</version>
+      </plugin>
+
     </plugins>
   </build>
         
