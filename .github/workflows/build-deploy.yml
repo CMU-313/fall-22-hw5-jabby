@@ -23,6 +23,10 @@ jobs:
         run: sudo apt-get -y -q --no-install-recommends install ffmpeg mediainfo tesseract-ocr tesseract-ocr-deu
       - name: Build with Maven
         run: mvn -B clean test
+      - name: Generate bug reports 
+        run: mvn compile site 
+      - name: Check bug patterns
+        run: mvn spotbugs:check
 
       - name: Generate JaCoCo Badge
         id: jacoco
